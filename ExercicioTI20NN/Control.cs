@@ -23,7 +23,13 @@ namespace ExerciciosTI20N
                               "2. Exercício 02\n" +
                               "3. Exercício 03\n" +
                               "4. Exercício 04\n" +
-                              "5. Exercício 05\n");
+                              "5. Exercício 05\n" +
+                              "6. Exercício 06\n" +
+                              "7. Exercício 07\n" +
+                              "8. Exercício 08\n" +
+                              "9. Exercício 09\n" +
+                              "10. Exercício 10"  +
+                              "11. Exercício 11");
         }//fim do menu
 
         public void Operacao()
@@ -57,9 +63,47 @@ namespace ExerciciosTI20N
 
                         Console.WriteLine(modelo.ExercicioCinco(num));
                         break;
+                    case 6:
+                        Console.WriteLine("Informe um numero: ");
+                        int num2 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioSeis(num2));
+                        break;
+                    case 7:
+                        Console.WriteLine("Informe um numero: ");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioSete(num3));
+                        break;
+                    case 8:
+                        Console.WriteLine("Informe um numero: ");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioOito(num3));
+                        break;
+                    case 9:
+                        Console.WriteLine("Informe um numero: ");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioNove(num3));
+                        break;
+                    case 10:
+                        Console.WriteLine("Informe um numero: ");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioDez(num3));
+                        break;
+                    case 11:
+                        Console.WriteLine("Informe um numero: ");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioOnze(num3));
+                        break;
                     default:
                         Console.WriteLine("Código digitado não é válido!");
                         break;
+
+
                 }//fim do método
             } while (opcao != 0);
         }//fim do operacao
